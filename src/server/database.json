@@ -1,0 +1,14 @@
+{
+  "signin": {
+    "username": "makbolat@hotmail.com",
+    "password": "232323",
+    "accessToken": "xffff",
+    "roles": ["ROLE_ADMIN", "ROLE_MODERATOR"]
+  },
+  "signup": {
+    "status": "Omnis et ullam cum quae itaque sunt commodi dolor. Molestiae porro ipsum cupiditate dolor alias id laborum unde. Ab repellendus ducimus qui tempore sapiente delectus reprehenderit sapiente deserunt. Dignissimos eum aut quis architecto iure. Fuga dolorem numquam."
+  },
+  "mod": {
+    "content": "Omnis et ullam cum quae itaque sunt commodi dolor. Molestiae porro ipsum cupiditate dolor alias id laborum unde. Ab repellendus ducimus qui tempore sapiente delectus reprehenderit sapiente deserunt. Dignissimos eum aut quis architecto iure. Fuga dolorem numquam."
+  }
+}
