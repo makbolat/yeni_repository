@@ -15,7 +15,20 @@ export class MenuComponent implements OnInit {
 
   constructor(private tokenStorageService: TokenStorageService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    debugger;
+    this.isLoggedIn = !!this.tokenStorageService.getToken();
+
+    if (this.isLoggedIn) {
+      const user = this.tokenStorageService.getUser();
+      this.roles = user.roles;
+
+      this.showAdminBoard = this.roles.includes('ROLE_ADMIN');
+      this.showModeratorBoard = this.roles.includes('ROLE_MODERATOR');
+
+      this.username = user.username;
+    }
+  }
 
   logout(): void {
     this.tokenStorageService.signOut();
