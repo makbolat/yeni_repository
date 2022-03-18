@@ -1,0 +1,36 @@
+<div class="container">
+  <form
+    class="form-signin"
+    role="form"
+    id="form1"
+    action="http://localhost/PMakslabPortalWeb2JQ/index.php/users/UYE_PCAuth"
+    method="post"
+  >
+    <h2 class="form-signin-heading">Giriş</h2>
+    <input
+      type="text"
+      name="kullaniciAdi"
+      class="form-control"
+      placeholder="Kullanıcı Adı"
+    />
+    <input
+      type="password"
+      name="parola"
+      class="form-control"
+      placeholder="Parola"
+    />
+    <label class="checkbox">
+      <input type="checkbox" value="remember-me" /> Beni hatırla
+    </label>
+
+    <button
+      class="btn btn-lg btn-primary btn-block"
+      type="submit"
+      name="btnGiris"
+      value="Giriş"
+      onclick="send"
+    >
+      Giriş
+    </button>
+  </form>
+</div>
