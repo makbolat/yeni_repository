@@ -16,6 +16,12 @@ import { BoardUserComponent } from './board-user/board-user.component';
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { MenuComponent } from './Users/menu/menu.component';
 import { UserMainComponent } from './Users/user-main/user-main.component';
+import { RolSecimiComponent } from './Users/rol-secimi/rol-secimi.component';
+import { MenuLinkTanimComponent } from './Users/menu-link-tanim/menu-link-tanim.component';
+import { HesapDurumComponent } from './hesap-kitap/hesap-durum/hesap-durum.component';
+import { PortfoyDurumComponent } from './hesap-kitap/portfoy-durum/portfoy-durum.component';
+import { OptionsComponent } from './hesap-kitap/options/options.component';
+import { HesapKitapMainComponent } from './hesap-kitap/hesap-kitap-main/hesap-kitap-main.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +35,12 @@ import { UserMainComponent } from './Users/user-main/user-main.component';
     BoardUserComponent,
     MenuComponent,
     UserMainComponent,
+    RolSecimiComponent,
+    MenuLinkTanimComponent,
+    HesapDurumComponent,
+    PortfoyDurumComponent,
+    OptionsComponent,
+    HesapKitapMainComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [authInterceptorProviders],

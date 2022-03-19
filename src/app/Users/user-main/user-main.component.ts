@@ -1,15 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { TokenStorageService } from './../../_services/token-storage.service';
 
 @Component({
   selector: 'app-user-main',
   templateUrl: './user-main.component.html',
-  styleUrls: ['./user-main.component.css']
+  styleUrls: ['./user-main.component.css'],
 })
 export class UserMainComponent implements OnInit {
+  constructor(private tokenStorageService: TokenStorageService) {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  logout(): void {
+    this.tokenStorageService.signOut();
+    window.location.reload();
   }
-
 }
